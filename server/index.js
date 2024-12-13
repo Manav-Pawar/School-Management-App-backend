@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 const corsOptions = {
-  origin:['https://school-management-app-frontend-l4yc-hoypwi60a.vercel.app'],
+  origin:['https://school-management-app-frontend-l4yc-hoypwi60a.vercel.app','https://school-management-app-frontend-azzc.vercel.app/','https://school-management-app-front-git-bdd816-manavs-projects-94a598ca.vercel.app/'],
   credentials:true
 }
 
