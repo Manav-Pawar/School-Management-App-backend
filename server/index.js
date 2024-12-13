@@ -11,7 +11,10 @@ const corsOptions = {
 }
 
 // Middleware
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: '*', // Still not recommended for production
+  credentials: true,
+}));
 app.use(express.json());
 
 // Database Connection
