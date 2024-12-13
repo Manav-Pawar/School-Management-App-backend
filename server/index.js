@@ -5,9 +5,13 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const corsOptions = {
+  origin:['https://school-management-app-frontend-l4yc-hoypwi60a.vercel.app'],
+  credentials:true
+}
 
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Database Connection
